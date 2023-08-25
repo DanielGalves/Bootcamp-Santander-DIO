@@ -34,12 +34,12 @@ body{
     }
 }
 
-
-@media screen and (min-width: 992px){
+@media screen and (min-width: 380px){
     .pokemons{
-        grid-template-columns: 1fr 1fr 1fr 1fr;        
+        grid-template-columns: 1fr 1fr;        
     }
 }
+
 
 @media screen and (min-width: 576px){
     .pokemons{
@@ -47,9 +47,9 @@ body{
     }
 }
 
-@media screen and (min-width: 380px){
+@media screen and (min-width: 992px){
     .pokemons{
-        grid-template-columns: 1fr 1fr;        
+        grid-template-columns: 1fr 1fr 1fr 1fr;        
     }
 }
 
