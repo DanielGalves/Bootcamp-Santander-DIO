@@ -1,7 +1,27 @@
-.pokemon{
+.pokemon grass{
     margin: .5rem;
     padding: 2rem 1rem;
     background-color: #49D0B0;
+    color:#FFF;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.pokemon fire{
+    margin: .5rem;
+    padding: 2rem 1rem;
+    background-color: #c75d30;
+    color:#FFF;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.pokemon water{
+    margin: .5rem;
+    padding: 2rem 1rem;
+    background-color: #309ac7;
     color:#FFF;
     border-radius: 1rem;
     display: flex;
