@@ -1,4 +1,4 @@
-.pokemon{
+.pokemon grass{
     margin: .5rem;
     padding: 2rem 1rem;
     background-color: #49D0B0;
@@ -8,9 +8,29 @@
     flex-direction: column;
 }
 
+.pokemon fire{
+    margin: .5rem;
+    padding: 2rem 1rem;
+    background-color: #c75d30;
+    color:#FFF;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.pokemon water{
+    margin: .5rem;
+    padding: 2rem 1rem;
+    background-color: #309ac7;
+    color:#FFF;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
 .pokemons{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    
     list-style: none;
     margin: 0;
     padding: 0;
