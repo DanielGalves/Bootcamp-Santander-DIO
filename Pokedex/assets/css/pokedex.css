@@ -1,43 +1,24 @@
-.pokemon grass{
-    margin: .5rem;
+
+.pokemon {
     padding: 2rem 1rem;
-    background-color: #49D0B0;
+    margin: .5rem;
     color:#FFF;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
 }
 
-.pokemon fire{
-    margin: .5rem;
-    padding: 2rem 1rem;
-    background-color: #c75d30;
-    color:#FFF;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.pokemon water{
-    margin: .5rem;
-    padding: 2rem 1rem;
-    background-color: #309ac7;
-    color:#FFF;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-}
 
 .pokemons{
-    display: grid;
-    
+    display: grid;   
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.pokemon .number{
+.pokemon .name{
     color: #FFF;
     margin: .25rem 0;
+    text-transform: capitalize;
 
 }
 
@@ -48,12 +29,6 @@
     font-size: .625rem;    
 }
 
-.pokemon .detail .types{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
 .pokemon .detail{
     display: flex;
     flex-direction: row;
@@ -61,13 +36,19 @@
     justify-content: space-between;
 }
 
-.pokemon .detail .type{
-    background-color: #61e1ca;
+.pokemon .detail .types{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.pokemon .detail .types .type{
     color:#FFF;
-    padding: .25rem .5 rem;
+    padding: .25rem .5rem;
     font-size: .625rem;
     margin: .125rem;
     border-radius: 1rem;
+    filter: brightness(1.1);
 
 }
 
@@ -76,3 +57,58 @@
     height: 70px;
     
 }
+.normal{
+    background-color:#a6a877;
+} 
+.poison{
+    background-color:#a040a0;
+}
+.psychic{
+    background-color:#f65687;
+}
+.grass{
+    background-color:#77c850;
+}
+.ground{
+    background-color:#dfbf69;
+}
+.ice{
+    background-color:#98d5d7;
+}
+.fire{
+    background-color:#ee7f30;
+}
+.rock{
+    background-color:#b8a137;
+}
+.dragon{
+    background-color:#6f38f6;
+}
+.water{
+    background-color:#678fee;
+}
+.bug{
+    background-color:#a8b720;
+}
+.dark{
+    background-color:#725847;
+}
+.fighting{
+    background-color:#bf3029;
+}
+.ghost{
+    background-color:#6e5896;
+}
+.steel{
+    background-color:#b9b7cf;
+}
+.flying{
+    background-color:#a98ff0;
+}
+.electric{
+    background-color:#f7cf2e;
+}
+.fairy{
+    background-color:#f9aec7;
+}
+
