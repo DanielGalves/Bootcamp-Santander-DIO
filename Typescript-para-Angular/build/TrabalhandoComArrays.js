@@ -6,3 +6,4 @@ let dados2 = ["Felipe", "Ana", "adriana"];
 let infos = ["Daniel", 30, 1.65, true];
 //tuplas - Array Multi Type com ordem definida
 let boleto = ["Conta de agua", 170.90, 93098];
+// Arrays Métodos utiliza os mesmos metodos do JavaScript
