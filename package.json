@@ -3,6 +3,7 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.2.2"
   }
 }
