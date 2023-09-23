@@ -8,14 +8,19 @@ import { PokemonService } from 'src/app/services/pokemon.service';
 })
 export class CardComponent implements OnInit {
 
-name: string = ''
+name: string = 'PIKACHU'
 attributesTypes:string[] = ['FIRE','ROCK'] 
 constructor(
   private service: PokemonService
 ){}
 
   ngOnInit(): void {
-    this.service.getPokemon("") 
+    this.service.getPokemon("charizard").subscribe(
+      {
+        next: (res) => console.log(res),
+        error: (err) => console.log(err)
+      }
+    ) 
   }
 
 }
