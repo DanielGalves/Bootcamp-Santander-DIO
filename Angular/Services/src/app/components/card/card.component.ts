@@ -21,7 +21,12 @@ constructor(
 ){}
 
   ngOnInit(): void {
-    this.service.getPokemon("charizard").subscribe(
+    this.getPokemon("pikachu")
+    
+  }
+
+  getPokemon(searchName:string){
+    this.service.getPokemon(searchName).subscribe(
       {
         next: (res) => {
           this.pokemon = {
@@ -30,17 +35,10 @@ constructor(
             sprites:res.sprites,
             types: res.types,
             species:res.species
-
-          }
-
-          console.log(this.pokemon)
-          console.log(res)
-          
+          }       
         },
-
-        error: (err) => console.log(err)
+        error: (err) => console.log("Not found")
       }
     ) 
   }
-
 }
