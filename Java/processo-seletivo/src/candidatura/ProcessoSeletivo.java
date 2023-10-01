@@ -9,9 +9,34 @@ public class ProcessoSeletivo {
 		
 		imprimirSelecionados(candidatos);
 						
+		for(String candidato : candidatos) {
+			ligandoParaCandidatos(candidato);
+		}
 	}
 	
-	static void ligandoParaCandidatos() {
+	static void ligandoParaCandidatos(String candidato) {
+		int tentativasRealizadas = 1;
+		boolean continuarTentando = true;
+		boolean atendeu = false;
+		
+		do {
+			atendeu = atender();
+			continuarTentando = !atendeu;
+			if(continuarTentando) {
+				tentativasRealizadas++;
+			}else {
+				System.out.println("CONTATO REALIZADO COM SUCESSO!!");
+			}			
+			
+		}while(continuarTentando && tentativasRealizadas <3);
+		
+		if(atendeu) {
+			System.out.println("CONSEGUIMOS CONTATO COM " + candidato + " NA " + tentativasRealizadas + "TENTATIVAS");
+		}else {
+			System.out.println("NÃO CONSEGUIMAS CONTADO COM " + candidato + ", NUMERO MAXIMO DE TENTATIVAS REALIZADAS");
+		}
+		
+		
 		
 	}
 	
